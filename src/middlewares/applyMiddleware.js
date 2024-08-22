@@ -6,7 +6,7 @@ const applyMiddleware = (express, app) => {
 
   app.use(
     cors({
-      origin: [process.env.LOCAL_CLIENT, process.env.REMOTE_CLIENT],
+      origin: [process.env.REMOTE_CLIENT],
       credentials: true,
     })
     
